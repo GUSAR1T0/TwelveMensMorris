@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>text/rules.htm</file>
+    </qresource>
+</RCC>

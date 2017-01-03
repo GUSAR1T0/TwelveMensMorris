@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+		<file>images/start_background.png</file>
+        <file>images/background.png</file>
+		<file>images/blackfield.png</file>
+		<file>images/whitefield.png</file>
+		<file>images/grayfield.png</file>
+		<file>images/greenfield.png</file>
+		<file>images/sheet1.png</file>
+		<file>images/sheet2.png</file>
+    </qresource>
+</RCC>

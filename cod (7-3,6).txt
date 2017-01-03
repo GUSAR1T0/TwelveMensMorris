@@ -1,0 +1,51 @@
+for (int i = 0; i < 7; i++)
+    {
+        if (i != 3) btn[i] = new QPushButton *[3];
+        else btn[i] = new QPushButton *[6];
+    }
+
+    for (int i = 0; i < 7; i++)
+    {
+        int n = 6;
+        if (i != 3) n = 3;
+
+        for (int j = 0; j < n; j++)
+            btn[i][j] = new QPushButton(this);
+    }
+
+    btn[0][0]->setGeometry(50, 73, 50, 50);
+    btn[0][1]->setGeometry(350, 73, 50, 50);
+    btn[0][2]->setGeometry(650, 73, 50, 50);
+    btn[1][0]->setGeometry(150, 173, 50, 50);
+    btn[1][1]->setGeometry(350, 173, 50, 50);
+    btn[1][2]->setGeometry(550, 173, 50, 50);
+    btn[2][0]->setGeometry(250, 273, 50, 50);
+    btn[2][1]->setGeometry(350, 273, 50, 50);
+    btn[2][2]->setGeometry(450, 273, 50, 50);
+    btn[3][0]->setGeometry(50, 373, 50, 50);
+    btn[3][1]->setGeometry(150, 373, 50, 50);
+    btn[3][2]->setGeometry(250, 373, 50, 50);
+    btn[3][3]->setGeometry(450, 373, 50, 50);
+    btn[3][4]->setGeometry(550, 373, 50, 50);
+    btn[3][5]->setGeometry(650, 373, 50, 50);
+    btn[4][0]->setGeometry(250, 473, 50, 50);
+    btn[4][1]->setGeometry(350, 473, 50, 50);
+    btn[4][2]->setGeometry(450, 473, 50, 50);
+    btn[5][0]->setGeometry(150, 573, 50, 50);
+    btn[5][1]->setGeometry(350, 573, 50, 50);
+    btn[5][2]->setGeometry(550, 573, 50, 50);
+    btn[6][0]->setGeometry(50, 673, 50, 50);
+    btn[6][1]->setGeometry(350, 673, 50, 50);
+    btn[6][2]->setGeometry(650, 673, 50, 50);
+
+    for (int i = 0; i < 7; i++)
+    {
+        int n = 6;
+        if (i != 3) n = 3;
+
+        for (int j = 0; j < n; j++)
+        {
+            btn[i][j]->show();
+            connect(btn[i][j], SIGNAL(clicked(bool)), this, SLOT(btn_clicked()));
+        }
+    }
